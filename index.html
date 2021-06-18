@@ -12,7 +12,11 @@
   </head>
   <body>
     <nav class="navigator">
-      <ul class="navigator-nav flex">
+      <button class="nav-btn" id="nav-btn">
+        <div class="line line1"></div>
+        <div class="line line2"></div>
+      </button>
+      <ul class="navigator-nav flex" id="navigator-nav">
         <li class="nav-item">
           <a class="nav-link" href="#main">
             <i class="fas fa-home"></i>
@@ -56,7 +60,7 @@
       </section>
       <section class="site-section featured" id="featured">
         <h2 class="section-header">Recent Works</h2>
-        <div class="featured-main-container flex">
+        <div class="featured-main-container grid">
           <div class="project-container flex">
             <div class="project-preview flex">
               <img class="project-image" src="resources/images/Goob-preview-sm.jpg" alt="goobbue game preview image">
@@ -158,11 +162,12 @@
           </div>
         </div>
       </section>
-      <section class="site-section about" id="about">
-        <div class="about-main-container">
-          <h2 class="section-header">About Me</h2>
-          <p class="description about-me">Ever since I started learning about code, I was instantly hooked. I keep finding new things to love about web development that inspires me to be better at what I do.</p>
-        </div>
+      <section class="site-section about flex" id="about">
+        <h2 class="section-header">About Me</h2>
+        <div class="inner-about-container flex">
+          <img src="resources/images/Self-portrait.jpg" alt="Digital Self-portrait drawing of JibbyCodes">
+          <p class="description about-me">I've been hooked on coding ever since I started learning the basics. I keep finding new things to love about web development that inspires me to be better at what I do. On my spare time, I like to paint or draw, and even try (and maybe fail at) following cooking recipes on youtube.</p>
+        </div>      
       </section>
       <section class="site-section contact" id="contact">
         <h2 class="section-header">Would you like to work with me?</h2>

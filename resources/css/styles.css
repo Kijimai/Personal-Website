@@ -89,6 +89,53 @@ body::-webkit-scrollbar-thumb {
   width: 100%;
 }
 
+.brand-li {
+  margin-right: auto;
+}
+
+.brand-container {
+  position: relative;
+  height: 7rem;
+  width: 7rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+.brand-line {
+  position: absolute;
+  top: 2.5rem;
+  width: 5rem;
+  height: 0.6rem;
+  background-color: var(--color-primary);
+  transition: transform 0.5s ease;
+}
+
+.brand2 {
+  top: 3.5rem;
+}
+
+.brand1.active {
+  transform: translateY(-1.5rem);
+}
+
+.brand2.active {
+  transform: translateY(1.5rem);
+}
+
+.brand-name {
+  position: absolute;
+  top: 2rem;
+  left: 0.5rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.brand-name.active {
+  opacity: 1;
+}
+
 .navigator-nav {
   width: 70%;
   margin: 0 auto;
@@ -291,6 +338,23 @@ body::-webkit-scrollbar-thumb {
   padding: 0 2rem;
 }
 
+
+/* Contact Section */
+
+.contact-form {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-grey);
+  max-width: 70rem;
+  margin: 0 auto;
+}
+
+.contact label {
+  font-size: 2rem;
+  color: var(--color-light);
+}
+
 /* Footer Section */
 
 
@@ -298,18 +362,25 @@ body::-webkit-scrollbar-thumb {
 
 /* Media Queries */
 
-@media (max-width: 360px) {
+@media (max-width: 375px) {
 
   .placeholder-image {
     height: 150px;
     width: auto;
   }
+
+  .self-portrait {
+    min-width: 30rem;
+    width: auto;
+    height: auto;
+  }
+
 }
 
 @media (max-width: 768px) {
 
   .site-section {
-    max-width: 100%;
+    max-width: 90%;
   }
 
   .navigator-nav {
@@ -348,7 +419,8 @@ body::-webkit-scrollbar-thumb {
 
 }
 
-@media (min-width: 930px) {
+@media (min-width: 1000px) {
+  
   .skillset-container:first-child {
     border-radius: 1.5rem 0 0 1.5rem;
     border-right: 1px solid var(--color-secondary);
@@ -357,46 +429,6 @@ body::-webkit-scrollbar-thumb {
   .skillset-container:last-child {
     border-left: 1px solid var(--color-secondary);
     border-radius: 0 1.5rem 1.5rem 0;
-  }
-}
-
-@media (max-width: 930px) {
-
-  .navigator-nav {
-    justify-content: center;
-  }
-
-  .description,
-  .skills p {
-    font-size: 2rem;
-  }
-
-  .skillset-main-container {
-    flex-direction: column;
-  }
-
-  .skillset-container {
-    padding: 3.5rem 0;
-    border-bottom: 1px solid var(--color-secondary);
-  }
-
-  .skillset-container:first-child {
-    border-radius: 1.5rem 1.5rem 0 0;
-  }
-
-  .skillset-container:last-child {
-    border: none;
-    border-radius: 0 0 1.5rem 1.5rem;
-  }
-
-  .inner-about-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .about-me {
-    max-width: 100%;
-    margin: 2rem 0;
   }
 }
 
@@ -428,11 +460,59 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1000px) {
+
+  
+  .navigator-nav {
+    justify-content: center;
+  }
+
+  .description,
+  .skills p {
+    font-size: 2rem;
+  }
+
   .featured-main-container {
     grid-template-columns: 1fr;
     align-items: center;
     justify-items: center;
     gap: 0;
   }
+
+  .project-container {
+    max-width: 100%;
+  }
+
+  .project-image {
+    height: 30rem;
+  }
+
+  .skillset-main-container {
+    flex-direction: column;
+  }
+
+  .skillset-container {
+    padding: 3.5rem 0;
+    border-bottom: 1px solid var(--color-secondary);
+  }
+
+  .skillset-container:first-child {
+    border-radius: 1.5rem 1.5rem 0 0;
+  }
+
+  .skillset-container:last-child {
+    border: none;
+    border-radius: 0 0 1.5rem 1.5rem;
+  }
+
+  .inner-about-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-me {
+    max-width: 100%;
+    margin: 2rem 0;
+  }
+
 } 

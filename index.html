@@ -17,6 +17,13 @@
         <div class="line line2"></div>
       </button>
       <ul class="navigator-nav flex" id="navigator-nav">
+        <li class="brand-li">
+          <a class="brand-container" id="brand-container">
+            <div class="brand-line brand1"></div>
+            <div class="brand-line brand2"></div>
+            <span class="brand-name">JDB</span>
+          </a>
+        </li>
         <li class="nav-item">
           <a class="nav-link" href="#main">
             <i class="fas fa-home"></i>
@@ -76,7 +83,7 @@
           </div>
           <div class="project-container flex">
             <div class="project-preview flex">
-              <div class="placeholder-image"></div>
+              <img class="project-image" src="resources/images/Goob-preview-sm.jpg" alt="goobbue game preview image">
             </div>
             <div class="project-description-container flex">
               <h3 class="project-name">Project Name</h3>
@@ -89,7 +96,7 @@
           </div>
           <div class="project-container flex">
             <div class="project-preview flex">
-              <div class="placeholder-image"></div>
+              <img class="project-image" src="resources/images/Goob-preview-sm.jpg" alt="goobbue game preview image">
             </div>
             <div class="project-description-container flex">
               <h3 class="project-name">Project Name</h3>
@@ -102,7 +109,7 @@
           </div>
           <div class="project-container flex">
             <div class="project-preview flex">
-              <div class="placeholder-image"></div>
+              <img class="project-image" src="resources/images/Goob-preview-sm.jpg" alt="goobbue game preview image">
             </div>
             <div class="project-description-container flex">
               <h3 class="project-name">Project Name</h3>
@@ -165,12 +172,22 @@
       <section class="site-section about flex" id="about">
         <h2 class="section-header">About Me</h2>
         <div class="inner-about-container flex">
-          <img src="resources/images/Self-portrait.jpg" alt="Digital Self-portrait drawing of JibbyCodes">
+          <img class="self-portrait" src="resources/images/Self-portrait.jpg" alt="Digital Self-portrait drawing of JibbyCodes">
           <p class="description about-me">I've been hooked on coding ever since I started learning the basics. I keep finding new things to love about web development that inspires me to be better at what I do. On my spare time, I like to paint or draw, and even try (and maybe fail at) following cooking recipes on youtube.</p>
         </div>      
       </section>
       <section class="site-section contact" id="contact">
         <h2 class="section-header">Would you like to work with me?</h2>
+        <form class="contact-form flex" action="https://formspree.io/f/xgeryrwo" method="POST">
+          <label>Your email:</label>
+          <input class="form-email" type="email" name="_replyto">
+          <label>Your message:</label>
+          <textarea class="form-message" name="message"></textarea>
+        
+          <!-- your other form fields go here -->
+        
+          <button type="submit">Send</button>
+        </form>
       </section>
     </main>
     <footer class="footer" id="footer">

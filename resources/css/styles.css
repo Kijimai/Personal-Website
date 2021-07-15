@@ -87,6 +87,7 @@ body::-webkit-scrollbar-thumb {
   background-color: var(--color-grey);
   color: var(--color-light);
   width: 100%;
+  z-index: 100;
 }
 
 .brand-li {
@@ -223,13 +224,14 @@ body::-webkit-scrollbar-thumb {
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
+  margin: 4rem 0;
 }
 
 .project-container {
   position: relative;  
   height: 20rem;
   width: 35rem;
-  color: var(--color-light);
+  color: var(--color-white);
   overflow: hidden;
   margin: 1rem;
 }
@@ -301,6 +303,38 @@ body::-webkit-scrollbar-thumb {
   opacity: 1;
 }
 
+.mini-projects-container {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+.mini-project {
+  background-color: var(--color-secondary);
+  padding: 2rem;
+  font-size: 1.4rem;
+  min-width: 25rem;
+}
+
+.mini-project:hover {
+  background-color: var(--color-primary);
+}
+
+.project-name {
+  margin-bottom: 1rem;
+}
+
+.mini-link {
+  padding: 0.5rem;
+  text-decoration: none;
+  margin: 0.5rem 0;
+  color: var(--color-white);
+}
+
+.mini-link:hover {
+  color: var(--color-dark);
+  background-color: var(--color-secondary);
+}
+
 /* Skillset Section */
 
 .skills {
@@ -353,6 +387,7 @@ body::-webkit-scrollbar-thumb {
 .inner-about-container {
 
 }
+
 /* .about-main-container {
   width: 100%;
 } */
@@ -367,11 +402,14 @@ body::-webkit-scrollbar-thumb {
 
 /* Contact Section */
 
+
+
 .contact-form {
+  text-align: left;
   flex-direction: column;
   justify-content: center;
   /* align-items: center; */
-  background-color: var(--color-grey);
+  /* background-color: var(--color-grey); */
   max-width: 70rem;
   margin: 0 auto;
   padding: 4rem 8rem;
@@ -386,22 +424,49 @@ body::-webkit-scrollbar-thumb {
 
 .form-email,
 .form-message {
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  color: var(--color-white);
+  border: none;
+  background-color: transparent;
   width: 100%;
   padding: 0.75rem 1rem;
+  margin-bottom: 2rem;
+  border-bottom: 0.3rem solid var(--color-light);
 }
 
 .form-email:focus,
 .form-message:focus {
-  outline: 0.3rem solid var(--color-secondary);
+  outline: none;
+  border-bottom: 0.3rem solid var(--color-secondary);
 }
 
 .form-message {
+  resize: none;
   min-height: 10rem;
 }
 
 .contact label {
   font-size: 2rem;
   color: var(--color-light);
+}
+
+.form-btn {
+  font-family: 'Roboto', sans-serif;
+  padding: 2rem;
+  display: block;
+  background-color: transparent;
+  border: 0.2rem solid var(--color-primary);
+  cursor: pointer;
+  text-transform: uppercase;
+  color: var(--color-white);
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.form-btn:hover {
+  background-color: var(--color-primary);
 }
 
 /* Footer Section */

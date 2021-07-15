@@ -212,6 +212,46 @@ body::-webkit-scrollbar-thumb {
 
 .hero {
   min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-container {
+  width: 100%;
+  padding: 2rem 0;
+  text-align: center;
+  background-color: var(--color-primary);
+}
+
+.circle-avatar {
+  border-radius: 50%;
+}
+
+.profile-descriptions {
+  color: var(--color-white);
+}
+
+.profile-descriptions h1 {
+  font-size: 5rem;
+}
+
+.profile-descriptions h2 {
+  font-size: 2rem;
+}
+
+.hero-links {
+  margin-top: 2rem;
+}
+
+.hero-links .fab {
+  margin: 0 1rem;
+  font-size: 5rem;
+  color: var(--color-white);
+  transition: color 0.3s ease;
+}
+
+.hero-links .fab:hover {
+  color: var(--color-black);
 }
 
 /* Featured Work Section */
@@ -472,8 +512,16 @@ body::-webkit-scrollbar-thumb {
 
 /* Footer Section */
 
+footer {
+  font-size: 2rem;
+  color: var(--color-light);
+  text-align: center;
+  margin-bottom: 1rem
+}
 
-
+.footer-link {
+  color: var(--color-secondary);
+}
 
 /* Media Queries */
 
@@ -482,6 +530,26 @@ body::-webkit-scrollbar-thumb {
   main {
     width: 100%;
     margin: 0 auto;
+  }
+
+  footer {
+    font-size: 1.6rem;
+  }
+
+  /* Featured Section - 375px */
+
+  .mini-project {
+    margin: 0.2rem;
+  }
+
+  /* Contact Section - 375px */
+
+  .contact-form {
+    padding: 4rem 0;
+  }
+
+  .site-section {
+    max-width: 100%;
   }
 
 }

@@ -7,7 +7,7 @@ const brandName = document.querySelector('.brand-name')
 const navLinks = document.querySelectorAll('.nav-link')
 const copyYear = document.querySelector('#year') 
 const projectContainers = document.querySelectorAll('.project-container')
-
+const yearSpan = document.getElementById('year')
 
 //copyright's current year in html
 copyYear.textContent = new Date().getFullYear()
@@ -58,3 +58,4 @@ projectContainers.forEach(container => {
   })
 })
 
+yearSpan.textContent = new Date().getFullYear()
